@@ -22,7 +22,3 @@ An end-to-end AI-powered customer support chatbot that classifies user intent us
 ```bash
 uvicorn src.api.app:app --reload
 
-### Frontend
-```bash
-streamlit run frontend/app.py
-
