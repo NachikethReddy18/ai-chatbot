@@ -18,7 +18,9 @@ An end-to-end AI-powered customer support chatbot that classifies user intent us
 
 ## Run Locally
 
-### Backend
+### Backend & Frontend
 ```bash
-uvicorn src.api.app:app --reload
+uvicorn src.api.app:app --reload  (backend)
+streamlit run frontend/app.py     (frontend)
+
 
