@@ -25,7 +25,8 @@ app.add_middleware(
 # -------------------------
 # LOAD MODEL
 # -------------------------
-MODEL_DIR = "models/intent_distilbert"
+MODEL_DIR = "NachikethReddy/intent-distilbert-support"
+
 
 tokenizer = DistilBertTokenizerFast.from_pretrained(MODEL_DIR)
 model = DistilBertForSequenceClassification.from_pretrained(MODEL_DIR)
