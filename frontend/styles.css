@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+* {
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background: radial-gradient(circle at top, #0f172a, #020617);
+    color: #e5e7eb;
+}
+
+/* Header */
+.app-title {
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: #38bdf8;
+}
+
+.app-subtitle {
+    font-size: 1.1rem;
+    color: #94a3b8;
+    margin-bottom: 1.5rem;
+}
+
+/* Chat layout */
+.chat-container {
+    max-width: 850px;
+    margin: auto;
+    padding-bottom: 140px;
+}
+
+/* Message bubbles */
+.chat-bubble {
+    max-width: 70%;
+    padding: 14px 18px;
+    border-radius: 16px;
+    margin: 12px 0;
+    line-height: 1.6;
+    font-size: 1.08rem;
+    animation: slideFade 0.35s ease-out;
+}
+
+.user {
+    background: linear-gradient(135deg, #2563eb, #1d4ed8);
+    color: white;
+    margin-left: auto;
+    border-bottom-right-radius: 6px;
+}
+
+.bot {
+    background: #020617;
+    border: 1px solid #1e293b;
+    color: #e5e7eb;
+    margin-right: auto;
+    border-bottom-left-radius: 6px;
+}
+
+/* Confidence bar */
+.confidence-wrapper {
+    width: 70%;
+    margin-bottom: 16px;
+}
+
+.confidence-bar {
+    height: 6px;
+    border-radius: 6px;
+    background: linear-gradient(90deg, #22c55e, #38bdf8);
+    animation: growBar 0.6s ease-out;
+}
+
+/* Input box */
+.input-container {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(2, 6, 23, 0.96);
+    border-top: 1px solid #1e293b;
+    padding: 18px;
+}
+
+.status {
+    font-size: 0.85rem;
+    color: #22c55e;
+    margin-bottom: 6px;
+}
+
+/* Animations */
+@keyframes slideFade {
+    from {
+        opacity: 0;
+        transform: translateY(8px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes growBar {
+    from {
+        width: 0%;
+    }
+}
